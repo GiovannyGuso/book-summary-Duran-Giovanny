@@ -45,9 +45,9 @@ Este es el resultado visible del componente una vez cargado en el navegador:
 ![Ejecución del componente](capturas/ejecucion.jpg)
 
 ---
-### Vista del componente ejecutándose
+### Repositorio de Git
 
-Link de repositorio en Gihub
+[Link de repositorio en Gihub ](https://github.com/GiovannyGuso/book-summary-Duran-Giovanny.git)
 
 ## Atributos personalizados
 
