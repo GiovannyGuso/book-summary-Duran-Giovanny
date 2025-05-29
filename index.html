@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Summary Component</title>
+  <script type="module" src="book-summary.js"></script>
+  <style>
+    body {
+      background-color: #121212;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <book-summary 
+    title="Cien Años de Soledad" 
+    author="Gabriel García Márquez" 
+    cover="img/portada.jpg">
+    
+    <p>
+      La historia mágica y trágica de la familia Buendía en el mítico pueblo de Macondo.
+    </p>
+
+    <p slot="extra" class="extra-info">
+      Género: Realismo mágico<br>
+      Año: 1967
+    </p>
+
+  </book-summary>
+</body>
+</html>
