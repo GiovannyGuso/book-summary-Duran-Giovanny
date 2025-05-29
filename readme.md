@@ -70,14 +70,14 @@ Este es el resultado visible del componente una vez cargado en el navegador:
 
 ```html
 <book-summary 
-  title="1984" 
-  author="George Orwell" 
-  cover="img/1984.jpg">
+  title="Las Cruces sobre el Agua" 
+  author="Joaquín Gallegos Lara" 
+  cover="img/las-cruces.jpg">
   <p>
-    Una novela distópica que describe una sociedad controlada por un régimen totalitario.
+    Una novela emblemática de la narrativa social ecuatoriana que narra los hechos trágicos de la masacre obrera de 1922 en Guayaquil, destacando la lucha y la injusticia vivida por la clase trabajadora.
   </p>
   <p slot="extra" class="extra-info">
-    Género: Ciencia ficción<br>
-    Año: 1949
+    Género: Novela histórica-social<br>
+    Año: 1946
   </p>
 </book-summary>
