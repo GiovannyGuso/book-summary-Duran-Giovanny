@@ -4,61 +4,47 @@ class BookSummary extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     const template = document.createElement('template');
-    template.innerHTML = `
-      <style>
-        :host {
-          display: block;
-          max-width: 320px;
-          border: 2px solid #444;
-          border-radius: 1rem;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-          font-family: 'Segoe UI', sans-serif;
-          background: #1e1e1e;
-          color: #f1f1f1;
-          overflow: hidden;
-        }
-
-        .container {
-          padding: 1rem;
-        }
-
-        img {
-          width: 100%;
-          height: auto;
-          border-bottom: 2px solid #555;
-        }
-
-        h2 {
-          font-size: 1.25rem;
-          margin: 0.5rem 0 0;
-          color: #f5f5f5;
-        }
-
-        p.author {
-          font-style: italic;
-          color: #ccc;
-          margin: 0;
-        }
-
-        ::slotted(p) {
-          margin-top: 1rem;
-          color: #ddd;
-        }
-
-        ::slotted(.extra-info) {
-          font-size: 0.9rem;
-          color: #aaa;
-          margin-top: 0.5rem;
-        }
-      </style>
-      <div class="container">
-        <img id="cover" />
-        <h2 id="title"></h2>
-        <p class="author" id="author"></p>
-        <slot></slot>
-        <slot name="extra"></slot>
-      </div>
-    `;
+ template.innerHTML = `
+  <style>
+    :host {
+      display: block;
+      width: 300px;
+      background: #222;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    img {
+      width: 100%;
+      border-radius: 4px;
+    }
+    h2 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+    .author {
+      font-size: 14px;
+      font-style: italic;
+      margin: 0;
+    }
+    ::slotted(p) {
+      margin: 10px 0 0;
+    }
+    ::slotted(.extra-info) {
+      font-size: 13px;
+      color: #bbb;
+    }
+  </style>
+  <div>
+    <img id="cover" />
+    <h2 id="title"></h2>
+    <p class="author" id="author"></p>
+    <slot></slot>
+    <slot name="extra"></slot>
+  </div>
+`;
     this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 
